@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64407ed6-8771-4d05-8070-4b55f2d6422c" name="Default" comment="Refactoring Class&#10;BookConfiguration and Library">
+    <list default="true" id="64407ed6-8771-4d05-8070-4b55f2d6422c" name="Default" comment="Refactoring Class&#10;SearchConfiguration and SearchController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/LibraryATOS.iml" afterPath="$PROJECT_DIR$/LibraryATOS.iml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/LibraryController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/LibraryController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Library.java" afterPath="$PROJECT_DIR$/src/main/java/model/Library.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/PersonConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/utils/PersonConfiguration.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/BookConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/utils/BookConfiguration.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/SearchConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/utils/SearchConfiguration.java" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" afterPath="$PROJECT_DIR$/target/classes/Main.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/LibraryController.class" afterPath="$PROJECT_DIR$/target/classes/controller/LibraryController.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchController.class" afterPath="$PROJECT_DIR$/target/classes/controller/SearchController.class" />
@@ -90,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchConfiguration.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SearchConfiguration.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/SearchConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="83" column="62" lean-forward="false" selection-start-line="83" selection-start-column="62" selection-end-line="83" selection-end-column="62" />
+            <state relative-caret-position="126">
+              <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -103,11 +104,11 @@
       <file leaf-file-name="SearchController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="126">
+              <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding>
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#449#450#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#508#509#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,29 +117,30 @@
       <file leaf-file-name="BookConfiguration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/BookConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="87" column="31" lean-forward="false" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
+            <state relative-caret-position="299">
+              <caret line="100" column="50" lean-forward="false" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="50" />
               <folding>
                 <element signature="e#283#289#0" expanded="true" />
+                <element signature="e#3461#3462#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LibraryController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LibraryController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/LibraryController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="72" column="17" lean-forward="false" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+              <caret line="72" column="110" lean-forward="false" selection-start-line="72" selection-start-column="110" selection-end-line="72" selection-end-column="110" />
               <folding>
-                <element signature="e#2784#2785#0" expanded="true" />
-                <element signature="e#2811#2812#0" expanded="true" />
-                <element signature="e#2849#2850#0" expanded="true" />
-                <element signature="e#2881#2882#0" expanded="true" />
-                <element signature="e#2911#2912#0" expanded="true" />
-                <element signature="e#2940#2941#0" expanded="true" />
-                <element signature="e#2981#2982#0" expanded="true" />
-                <element signature="e#3017#3018#0" expanded="true" />
+                <element signature="e#2806#2807#0" expanded="true" />
+                <element signature="e#2833#2834#0" expanded="true" />
+                <element signature="e#2871#2872#0" expanded="true" />
+                <element signature="e#2903#2904#0" expanded="true" />
+                <element signature="e#2933#2934#0" expanded="true" />
+                <element signature="e#2962#2963#0" expanded="true" />
+                <element signature="e#3003#3004#0" expanded="true" />
+                <element signature="e#3039#3040#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -183,12 +185,12 @@
         <option value="$PROJECT_DIR$/src/main/java/view/SearchMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/DataBook.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/SearchController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/SearchConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/BookConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Library.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/PersonConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/BookConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/LibraryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/SearchConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/SearchController.java" />
       </list>
     </option>
   </component>
@@ -484,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560709634096</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refactoring Class&#10;PersonConfiguration and LibraryController">
+      <created>1560710078567</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1560710078567</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -502,13 +511,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31139648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31139648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2520064" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6516854" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -565,7 +574,9 @@
     <MESSAGE value="Bugs Fixed&#10;Iterator person!Issue fixed when only one person is introduce" />
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Refactoring Class&#10;BookConfiguration and Library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Class&#10;BookConfiguration and Library" />
+    <MESSAGE value="Refactoring Class&#10;PersonConfiguration and LibraryController" />
+    <MESSAGE value="Refactoring Class&#10;SearchConfiguration and SearchController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Class&#10;SearchConfiguration and SearchController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -641,6 +652,7 @@
           <caret line="60" column="64" lean-forward="false" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
           <folding>
             <element signature="e#283#289#0" expanded="true" />
+            <element signature="e#3461#3462#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -650,14 +662,14 @@
         <state relative-caret-position="1088">
           <caret line="73" column="45" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="45" />
           <folding>
-            <element signature="e#2784#2785#0" expanded="true" />
-            <element signature="e#2811#2812#0" expanded="true" />
-            <element signature="e#2849#2850#0" expanded="true" />
-            <element signature="e#2881#2882#0" expanded="true" />
-            <element signature="e#2911#2912#0" expanded="true" />
-            <element signature="e#2940#2941#0" expanded="true" />
-            <element signature="e#2981#2982#0" expanded="true" />
-            <element signature="e#3017#3018#0" expanded="true" />
+            <element signature="e#2806#2807#0" expanded="true" />
+            <element signature="e#2833#2834#0" expanded="true" />
+            <element signature="e#2871#2872#0" expanded="true" />
+            <element signature="e#2903#2904#0" expanded="true" />
+            <element signature="e#2933#2934#0" expanded="true" />
+            <element signature="e#2962#2963#0" expanded="true" />
+            <element signature="e#3003#3004#0" expanded="true" />
+            <element signature="e#3039#3040#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -708,8 +720,8 @@
         <state relative-caret-position="119">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -752,6 +764,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#283#289#0" expanded="true" />
+            <element signature="e#3461#3462#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -859,6 +872,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#283#289#0" expanded="true" />
+            <element signature="e#3461#3462#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -966,14 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/SearchConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="83" column="62" lean-forward="false" selection-start-line="83" selection-start-column="62" selection-end-line="83" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/data/DataBook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1041,41 +1047,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/LibraryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="72" column="110" lean-forward="false" selection-start-line="72" selection-start-column="110" selection-end-line="72" selection-end-column="110" />
+          <folding>
+            <element signature="e#2806#2807#0" expanded="true" />
+            <element signature="e#2833#2834#0" expanded="true" />
+            <element signature="e#2871#2872#0" expanded="true" />
+            <element signature="e#2903#2904#0" expanded="true" />
+            <element signature="e#2933#2934#0" expanded="true" />
+            <element signature="e#2962#2963#0" expanded="true" />
+            <element signature="e#3003#3004#0" expanded="true" />
+            <element signature="e#3039#3040#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/BookConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="87" column="31" lean-forward="false" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
+        <state relative-caret-position="299">
+          <caret line="100" column="50" lean-forward="false" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="50" />
           <folding>
             <element signature="e#283#289#0" expanded="true" />
+            <element signature="e#3461#3462#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/SearchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        <state relative-caret-position="126">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding>
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/LibraryController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/SearchConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="72" column="17" lean-forward="false" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
-          <folding>
-            <element signature="e#2784#2785#0" expanded="true" />
-            <element signature="e#2811#2812#0" expanded="true" />
-            <element signature="e#2849#2850#0" expanded="true" />
-            <element signature="e#2881#2882#0" expanded="true" />
-            <element signature="e#2911#2912#0" expanded="true" />
-            <element signature="e#2940#2941#0" expanded="true" />
-            <element signature="e#2981#2982#0" expanded="true" />
-            <element signature="e#3017#3018#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="126">
+          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

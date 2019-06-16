@@ -97,4 +97,8 @@ public class BookConfiguration {
         System.out.println("Number of books available: " + countAvailable);
         System.out.println("Number of books not available: " + countNoAvailable);
     }
+
+    public static LinkedList<Book> getBookList() {
+        return bookList;
+    }
 }

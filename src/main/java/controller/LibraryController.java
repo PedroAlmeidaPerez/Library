@@ -70,7 +70,7 @@ public class LibraryController {
                 mainMenu();
                 break;
             case 6:
-               // SearchController searchController = new SearchController(menu, library);
+                SearchController searchController = new SearchController(menu, BookConfiguration.getBookList());
                 break;
                 //searchMenu();
             case 0:
