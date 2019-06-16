@@ -10,36 +10,32 @@ import java.util.Scanner;
 
 public class BookConfiguration {
 
-    public static void addBook (){
+    private Scanner scanner = new Scanner(System.in);
+
+    public void addBook (Library library){
         String option;
-        Scanner scanner = new Scanner(System.in);
+      //  Scanner scanner = new Scanner(System.in);
         System.out.println("Do you want to fill the collection automatically? Y/N");
         option  = scanner.nextLine();
         if(option.equals("N")){
-            //Scanner scanner = new Scanner(System.in);
             System.out.println("For finishing adding books you must write exit or 0");
-            do {
+            while ((!(scanner.hasNext("exit"))) && (!(scanner.hasNext("0")))) {
                 String tittle = scanner.nextLine();
-                Library.book.add(new Book(tittle));
-            }while ((!(scanner.hasNext("exit"))) && (!(scanner.hasNext("0"))));
+                library.getBook().add(new Book(tittle));
+            }
         }else{
-            DataBook.dataInsert();
+            DataBook.dataInsert(library);
         }
-
-
-
-
-        Book.showBooks();
-        //return Library.getBook();
+        Book.showBooks(library);
     }
 
-    public static void deleteBook(){
-        Scanner scanner = new Scanner(System.in);
+    public void deleteBook(Library library){
+       // Scanner scanner = new Scanner(System.in);
         System.out.println("Introduce the ID from the book that you want to delete: ");
         int Id = scanner.nextInt();
-        ListIterator<Book> iter = Library.getBook().listIterator();
-        int ind = searchBook(Id);
-        Book book = Library.book.get(ind);
+        ListIterator<Book> iter = library.getBook().listIterator();
+        int ind = SearchConfiguration.searchBook(Id, library);
+        Book book = library.getBook().get(ind);
         if(!book.getStatus()){
             System.out.println("si esta");
             for (int i = 0; i <= ind; i++){
@@ -55,46 +51,34 @@ public class BookConfiguration {
         }
     }
 
-    public static int searchBook(int Id){
-        Scanner scanner = new Scanner(System.in);
-        ListIterator<Book> iter1 = Library.getBook().listIterator();
-        int auxId = iter1.next().getId();
-        while (iter1.hasNext()){
-            if(auxId == Id){
-                System.out.println("si esta");
-                return iter1.nextIndex()-1;
+    public void  lentBook(Person person, Library library){
+        if (person != null){
+            //ListIterator<Book> iter1 = Library.getBook().listIterator();
+            //Scanner scanner = new Scanner(System.in);
+            System.out.println("Which book do you want to rent (by Id)?");
+            Book.showBooks(library);
+            int Id = scanner.nextInt();
+            int ind = SearchConfiguration.searchBook(Id, library);
+            Book book = library.getBook().get(ind);
+            book.showBook(book);
+            if (book.getStatus()){
+                System.out.println("Sorry but this book is lent by: " + book.getLent());
             }else{
-                System.out.println("no esta");
-                auxId = iter1.next().getId();
+                book.setStatus(true);
+                book.setLent(person.getName());
+                book.setIdLent(person.getId());
+                person.setIdBook(book.getId());
+                System.out.println(("You have lent the book: ") + book.getTittle());
             }
-        }
-        return -1;
-    }
-
-    public static void  lentBook(Person person){
-        ListIterator<Book> iter1 = Library.getBook().listIterator();
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Which book do you want to rent (by Id)?");
-        Book.showBooks();
-        int Id = scanner.nextInt();
-        int ind = BookConfiguration.searchBook(Id);
-        Book book = Library.book.get(ind);
-        book.showBook(book);
-        if (book.getStatus()){
-            System.out.println("Sorry but this book is lent by: " + book.getLent());
         }else{
-            book.setStatus(true);
-            book.setLent(person.getName());
-            book.setIdLent(person.getId());
-            person.setIdBook(book.getId());
-            System.out.println(("You have lent the book: ") + book.getTittle());
+            System.out.println("This Client does not exist");
         }
     }
 
-    public static void booksAvailable (){
+    public void booksAvailable (Library library){
         int countAvailable=0;
         int countNoAvailable=0;
-        for (Book listBooks: Library.getBook()
+        for (Book listBooks: library.getBook()
              ) {
             if (listBooks.getStatus()){
                 countNoAvailable++;
