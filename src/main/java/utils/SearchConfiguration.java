@@ -3,6 +3,7 @@ package utils;
 import model.Book;
 import model.Library;
 
+import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Scanner;
 
@@ -11,7 +12,7 @@ public class SearchConfiguration {
     private String author;
     private int year;
 
-    public void searchByTittle (Library library){
+    /*public void searchByTittle (Library library){
         System.out.println("Introduce a tittle to search: ");
         Scanner scanner = new Scanner(System.in);
         tittle = scanner.nextLine();
@@ -79,10 +80,10 @@ public class SearchConfiguration {
             System.out.println("book not found");
         }
     }
-
-    public static int searchBook(int Id, Library library){
+*/
+    public static int searchBook(int Id, LinkedList<Book> book){
         Scanner scanner = new Scanner(System.in);
-        ListIterator<Book> iter1 = library.getBook().listIterator();
+        ListIterator<Book> iter1 = book.listIterator();
         while (iter1.hasNext()){
             int auxId = iter1.next().getId();
             if(auxId == Id){

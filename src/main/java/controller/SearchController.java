@@ -26,7 +26,7 @@ public class SearchController {
     private void searchOption(){
         //SearchConfiguration searchConfiguration = new SearchConfiguration();
         //this.option = searchMenu.selectOption();
-        switch (option) {
+       /* switch (option) {
             case 1:
                 searchConfiguration.searchByTittle(library);
                 this.option = searchMenu.selectOption();
@@ -56,6 +56,6 @@ public class SearchController {
                 this.option = searchMenu.selectOption();
                 searchOption();
                 break;
-        }
+        }*/
     }
 }

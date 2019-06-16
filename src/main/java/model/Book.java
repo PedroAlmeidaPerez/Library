@@ -1,5 +1,7 @@
 package model;
 
+import java.util.LinkedList;
+
 public class Book {
     /*se crea IdNext para no tener que poner Id public y poder respetar la encapsulacion*/
     private int Id;
@@ -95,9 +97,9 @@ public class Book {
         //System.out.println(book.getId() + " " + book.getTittle() + " " + book.getAuthor() + " " + book.getYear() + " " + book.getStatus());
     }
 
-    public static void showBooks(Library library) {
+    public static void showBooks(LinkedList <Book> book) {
        // System.out.println("Id     Tittle              Author                  Year            Status");
-        for (Book listBook : library.getBook()
+        for (Book listBook : book
                 ) {
             System.out.print("Id: " + listBook.getId() +
                              " Tittle: " + listBook.getTittle() +

@@ -41,14 +41,14 @@ public class LibraryController {
             case 2:
 
                 System.out.println("estas en la opcion 2");
-                bookConfiguration.addBook(library);
+                bookConfiguration.addBook();
                 //BookConfiguration.addBook();
                 this.option = menu.selectOption();
                 mainMenu();
                 break;
             case 3:
                 System.out.println("Estas en la opcion 3");
-                bookConfiguration.deleteBook(library);
+                bookConfiguration.deleteBook();
                 //BookConfiguration.deleteBook();
                 this.option = menu.selectOption();
                 mainMenu();
@@ -57,21 +57,20 @@ public class LibraryController {
                 Person person;
                 System.out.println("Estas en la opcion 4");
                 person = personConfiguration.searchPerson(library);
-                bookConfiguration.lentBook(person, library);
+                bookConfiguration.lentBook(person);
                 //BookConfiguration.lentBook(person);
                 this.option = menu.selectOption();
                 mainMenu();
                 break;
 
             case 5:
-                Book.showBooks(library);
-                bookConfiguration.booksAvailable(library);
+                bookConfiguration.booksAvailable();
                 //BookConfiguration.booksAvailable();
                 this.option = menu.selectOption();
                 mainMenu();
                 break;
             case 6:
-                SearchController searchController = new SearchController(menu, library);
+               // SearchController searchController = new SearchController(menu, library);
                 break;
                 //searchMenu();
             case 0:
