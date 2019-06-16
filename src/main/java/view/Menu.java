@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Menu {
     private int option;
 
-    public  int selectOption (){
+    public int selectOption (){
         Scanner scanner = new Scanner(System.in);
         //while (option != 0){
             System.out.println("*-----------Welcome to ATOS Main Menu library-----------*");

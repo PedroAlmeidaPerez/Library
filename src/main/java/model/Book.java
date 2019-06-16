@@ -11,6 +11,7 @@ public class Book {
     private String lent;
     private int IdLent;
 
+
     public Book(String tittle) {
         this.tittle = tittle;
         Id = IdNext;
@@ -94,9 +95,9 @@ public class Book {
         //System.out.println(book.getId() + " " + book.getTittle() + " " + book.getAuthor() + " " + book.getYear() + " " + book.getStatus());
     }
 
-    public static void showBooks() {
+    public static void showBooks(Library library) {
        // System.out.println("Id     Tittle              Author                  Year            Status");
-        for (Book listBook : Library.getBook()
+        for (Book listBook : library.getBook()
                 ) {
             System.out.print("Id: " + listBook.getId() +
                              " Tittle: " + listBook.getTittle() +

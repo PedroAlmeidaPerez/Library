@@ -24,9 +24,9 @@ public class BookConfiguration {
                 library.getBook().add(new Book(tittle));
             }
         }else{
-            DataBook.dataInsert();
+            DataBook.dataInsert(library);
         }
-        Book.showBooks();
+        Book.showBooks(library);
     }
 
     public void deleteBook(Library library){
@@ -34,7 +34,7 @@ public class BookConfiguration {
         System.out.println("Introduce the ID from the book that you want to delete: ");
         int Id = scanner.nextInt();
         ListIterator<Book> iter = library.getBook().listIterator();
-        int ind = SearchConfiguration.searchBook(Id);
+        int ind = SearchConfiguration.searchBook(Id, library);
         Book book = library.getBook().get(ind);
         if(!book.getStatus()){
             System.out.println("si esta");
@@ -51,15 +51,15 @@ public class BookConfiguration {
         }
     }
 
-    public void  lentBook(Person person){
+    public void  lentBook(Person person, Library library){
         if (person != null){
-            ListIterator<Book> iter1 = Library.getBook().listIterator();
+            //ListIterator<Book> iter1 = Library.getBook().listIterator();
             //Scanner scanner = new Scanner(System.in);
             System.out.println("Which book do you want to rent (by Id)?");
-            Book.showBooks();
+            Book.showBooks(library);
             int Id = scanner.nextInt();
-            int ind = SearchConfiguration.searchBook(Id);
-            Book book = Library.getBook().get(ind);
+            int ind = SearchConfiguration.searchBook(Id, library);
+            Book book = library.getBook().get(ind);
             book.showBook(book);
             if (book.getStatus()){
                 System.out.println("Sorry but this book is lent by: " + book.getLent());

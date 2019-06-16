@@ -13,19 +13,19 @@ public class Library {
          person = new ArrayList();
     }
 
-    public static LinkedList<Book> getBook() {
+    public LinkedList<Book> getBook() {
         return book;
     }
 
-    public static void setBook(LinkedList<Book> book) {
+    public void setBook(LinkedList<Book> book) {
         Library.book = book;
     }
 
-    public static ArrayList<Person> getPerson() {
+    public  ArrayList<Person> getPerson() {
         return person;
     }
 
-    public static void setPerson(ArrayList<Person> person) {
+    public void setPerson(ArrayList<Person> person) {
         Library.person = person;
     }
 
