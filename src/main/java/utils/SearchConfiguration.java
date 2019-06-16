@@ -9,6 +9,8 @@ import java.util.Scanner;
 public class SearchConfiguration {
     private String tittle;
     private String author;
+    private int year;
+
     public void searchByTittle (){
         System.out.println("Introduce a tittle to search: ");
         Scanner scanner = new Scanner(System.in);
@@ -38,7 +40,17 @@ public class SearchConfiguration {
     }
 
     public void searchByYear() {
-        System.out.println("search by year");
+        System.out.println("Introduce the year to search: ");
+        Scanner scanner = new Scanner(System.in);
+        year = scanner.nextInt();
+        ListIterator<Book> iter1 = Library.getBook().listIterator();
+        Book auxYear = iter1.next();
+        while (iter1.hasNext()){
+            if(auxYear.getYear() == (year)){
+                System.out.println(auxYear.getId() + " " + auxYear.getTittle() + " " + auxYear.getAuthor() + " " + auxYear.getYear() + " " + auxYear.getStatus());
+            }
+            auxYear = iter1.next();
+        }
     }
 
     public void searchByAuthorAndTittle() {

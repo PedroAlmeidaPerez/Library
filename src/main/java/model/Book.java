@@ -6,7 +6,7 @@ public class Book {
     private static int IdNext = 1;
     private String tittle;
     private String author;
-    private String year;
+    private int year;
     private boolean status;
     private String lent;
     private int IdLent;
@@ -18,7 +18,7 @@ public class Book {
 
     }
 
-    public Book(String tittle, String author, String year) {
+    public Book(String tittle, String author, int year) {
         this.tittle = tittle;
         this.author = author;
         this.year = year;
@@ -47,11 +47,11 @@ public class Book {
         this.author = author;
     }
 
-    public String getYear() {
+    public int getYear() {
         return year;
     }
 
-    public void setYear(String year) {
+    public void setYear(int year) {
         this.year = year;
     }
 
