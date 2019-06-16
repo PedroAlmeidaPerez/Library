@@ -116,4 +116,10 @@ public class Book {
         }
 
     }
+
+    @Override
+    public String toString() {
+        return "\nid: " + Id + ", tittle: " + tittle + ", author: " + author + ", year: " + year ;
+    }
+
 }

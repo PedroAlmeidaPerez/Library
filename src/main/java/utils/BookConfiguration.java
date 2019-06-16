@@ -2,12 +2,15 @@ package utils;
 
 import data.DataBook;
 import model.Book;
-import model.Library;
 import model.Person;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.ListIterator;
 import java.util.Scanner;
+import java.util.stream.Collectors;
+
+import static utils.DistincByKey.distinctByKey;
 
 public class BookConfiguration {
 
@@ -86,6 +89,16 @@ public class BookConfiguration {
         int countAvailable=0;
         int countNoAvailable=0;
         Book.showBooks(bookList);
+        List<Book> distinctElements = bookList.stream()
+                .filter( distinctByKey(p -> p.getTittle()) )
+                .collect( Collectors.toList() );
+        System.out.println("-----------------------------------");
+        System.out.println(distinctElements);
+        System.out.println("-----------------------------------");
+
+
+
+
         for (Book listBooks: bookList
              ) {
             if (listBooks.getStatus()){
