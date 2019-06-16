@@ -27,34 +27,15 @@ public class PersonConfiguration {
     }
 
     public static Person searchPerson(){
-        Book book;
+        //Book book;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduce the name of the Person that wants to rent the book: ");
         String name = scanner.nextLine();
         ListIterator<Person> iter = Library.getPerson().listIterator();
         String auxName = iter.next().getName();
         while (iter.hasNext()){
-
             if(auxName.equals(name)){
                 return iter.previous();
-               ////// System.out.println("Which book do you want to rent (by Id)?");
-             ///////   Library.showBooks();
-             ///////   int Id = scanner.nextInt();
-                //BookConfiguration.searchBook(Id);
-             //////   book = BookConfiguration.searchBook(Id);
-               // System.out.println(BookConfiguration.searchBook(Id).getTittle());
-             //////   book.showBook(book);
-            //////*   if (book.getStatus()){
-              /////      System.out.println("Sorry but this book is lent by: ");
-             //////   }else{
-            /////        book.setStatus(true);
-             /////       System.out.println(("You have lent the book"));
-            ////    }
-                /*if (BookConfiguration.searchBook(Id) != "juan"){
-
-                }*/
-
-             /////   break;
             }else{
                 System.out.println("no esta");
                 auxName = iter.next().getName();
