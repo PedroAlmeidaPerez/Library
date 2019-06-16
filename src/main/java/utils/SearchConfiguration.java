@@ -75,4 +75,20 @@ public class SearchConfiguration {
             System.out.println("book not found");
         }
     }
+
+    public static int searchBook(int Id){
+        Scanner scanner = new Scanner(System.in);
+        ListIterator<Book> iter1 = Library.getBook().listIterator();
+        int auxId = iter1.next().getId();
+        while (iter1.hasNext()){
+            if(auxId == Id){
+                System.out.println("si esta");
+                return iter1.nextIndex()-1;
+            }else{
+                System.out.println("no esta");
+                auxId = iter1.next().getId();
+            }
+        }
+        return -1;
+    }
 }
