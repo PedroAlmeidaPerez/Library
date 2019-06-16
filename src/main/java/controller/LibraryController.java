@@ -14,55 +14,59 @@ import java.util.Scanner;
 public class LibraryController {
     private Menu menu = new Menu();
     private int option;
-    private SearchMenu searchMenu = new SearchMenu();
+   // private SearchMenu searchMenu = new SearchMenu();
+    BookConfiguration bookConfiguration = new BookConfiguration();
 
+    //private Library library;
+    //private PersonConfiguration personConfiguration;
+    private Library library = new Library();
+    private PersonConfiguration personConfiguration = new PersonConfiguration();
 
     public LibraryController() {
-        //Menu menu = new Menu();
-        Library library = new Library();
+        this.library = library;
+        this.personConfiguration = personConfiguration;
         this.option = menu.selectOption();
         mainMenu();
     }
 
     private void mainMenu() {
-      //  this.option = menu.selectOption();
-       // Menu menu = new Menu ();
+
         switch (option) {
             case 1:
                 System.out.println("estas en la opcion 1");
-                PersonConfiguration.addPersons();
+                personConfiguration.addPersons(library);
                 this.option = menu.selectOption();
                 mainMenu();
                 break;
             case 2:
+
                 System.out.println("estas en la opcion 2");
-                BookConfiguration.addBook();
+                bookConfiguration.addBook(library);
+                //BookConfiguration.addBook();
                 this.option = menu.selectOption();
                 mainMenu();
                 break;
             case 3:
                 System.out.println("Estas en la opcion 3");
-                BookConfiguration.deleteBook();
+                bookConfiguration.deleteBook(library);
+                //BookConfiguration.deleteBook();
                 this.option = menu.selectOption();
                 mainMenu();
                 break;
             case 4:
                 Person person;
                 System.out.println("Estas en la opcion 4");
-                person = PersonConfiguration.searchPerson();
-                if (person != null){
-                    BookConfiguration.lentBook(person);
-                    this.option = menu.selectOption();
-                    mainMenu();
-                    break;
-                }else{
-                    System.out.println("This Client does not exist");
-                    BookConfiguration.lentBook(person);
-                }
+                person = personConfiguration.searchPerson(library);
+                bookConfiguration.lentBook(person);
+                //BookConfiguration.lentBook(person);
+                this.option = menu.selectOption();
+                mainMenu();
+                break;
 
             case 5:
                 Book.showBooks();
-                BookConfiguration.booksAvailable();
+                bookConfiguration.booksAvailable(library);
+                //BookConfiguration.booksAvailable();
                 this.option = menu.selectOption();
                 mainMenu();
                 break;

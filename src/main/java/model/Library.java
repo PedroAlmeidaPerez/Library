@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Library {
-    public static ArrayList<Person> person;
-    public static LinkedList<Book> book;
+    private static ArrayList<Person> person;
+    private static LinkedList<Book> book;
 
-/*falta insertar los constructores*/
 
     public Library() {
          book = new LinkedList();
