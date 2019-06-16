@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Library {
-    private static ArrayList<Person> person;
+   // private static ArrayList<Person> person;
     //private static LinkedList<Book> book;
 
 
     public Library() {
       //   book = new LinkedList();
-         person = new ArrayList();
+        // person = new ArrayList();
     }
 
    /* public LinkedList<Book> getBook() {
@@ -21,13 +21,13 @@ public class Library {
         Library.book = book;
     }*/
 
-    public  ArrayList<Person> getPerson() {
+   /* public  ArrayList<Person> getPerson() {
         return person;
     }
 
     public void setPerson(ArrayList<Person> person) {
         Library.person = person;
     }
-
+*/
 
 }

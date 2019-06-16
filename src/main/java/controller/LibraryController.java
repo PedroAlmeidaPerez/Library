@@ -34,7 +34,7 @@ public class LibraryController {
         switch (option) {
             case 1:
                 System.out.println("estas en la opcion 1");
-                personConfiguration.addPersons(library);
+                personConfiguration.addPersons();
                 this.option = menu.selectOption();
                 mainMenu();
                 break;
@@ -56,7 +56,7 @@ public class LibraryController {
             case 4:
                 Person person;
                 System.out.println("Estas en la opcion 4");
-                person = personConfiguration.searchPerson(library);
+                person = personConfiguration.searchPerson();
                 bookConfiguration.lentBook(person);
                 //BookConfiguration.lentBook(person);
                 this.option = menu.selectOption();

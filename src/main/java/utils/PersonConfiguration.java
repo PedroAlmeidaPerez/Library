@@ -9,26 +9,27 @@ import java.util.ListIterator;
 import java.util.Scanner;
 
 public class PersonConfiguration {
-    public void  addPersons (Library library){
+    private static ArrayList<Person> listPerson = new ArrayList<Person>();
+    public void  addPersons (){
         Scanner scanner = new Scanner(System.in);
         System.out.println("For finishing adding persons you must write exit or 0");
         while ((!(scanner.hasNext("exit"))) && (!(scanner.hasNext("0")))) {
             String name = scanner.nextLine();
-            library.getPerson().add(new Person(name));
+            listPerson.add(new Person(name));
 
         }
-        for (Person listPerson : library.getPerson()
+        for (Person listPerson : listPerson
                 ) {
             System.out.println(listPerson.getName());
         }
         //return Library.getPerson();
     }
 
-    public Person searchPerson(Library library){
+    public Person searchPerson(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduce the name of the Person that wants to rent the book: ");
         String name = scanner.nextLine();
-        ListIterator<Person> iter = library.getPerson().listIterator();
+        ListIterator<Person> iter = listPerson.listIterator();
         Person auxPerson;
         String auxName;
         while (iter.hasNext()){
