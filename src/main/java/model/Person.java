@@ -25,8 +25,6 @@ public class Person {
         return name;
     }
 
-
-
     public void setName(String name) {
         this.name = name;
     }
@@ -38,6 +36,4 @@ public class Person {
     public void setIdBook(int idBook) {
         this.idBook = idBook;
     }
-
-
 }

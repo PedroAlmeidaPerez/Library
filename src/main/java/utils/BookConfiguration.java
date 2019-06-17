@@ -3,19 +3,16 @@ package utils;
 import data.DataBook;
 import model.Book;
 import model.Person;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.Scanner;
 import java.util.stream.Collectors;
-
 import static utils.DistincByKey.distinctByKey;
 
 public class BookConfiguration {
 
     private static LinkedList<Book> bookList = new LinkedList<Book>();
-   // private Scanner scanner = new Scanner(System.in);
 
     public void addBook (){
         String option;
@@ -65,8 +62,6 @@ public class BookConfiguration {
 
     public void  lentBook(Person person){
         if (person != null){
-
-            //ListIterator<Book> iter1 = Library.getBook().listIterator();
             Scanner scanner = new Scanner(System.in);
             System.out.println("Which book do you want to rent (by Id)?");
             showBooks(bookList);
@@ -104,9 +99,6 @@ public class BookConfiguration {
         System.out.println(distinctElements);
         System.out.println("-----------------------------------");
 
-
-
-
         for (Book listBooks: bookList
              ) {
             if (listBooks.getStatus()){
@@ -124,7 +116,6 @@ public class BookConfiguration {
     }
 
     public void showBooks(LinkedList <Book> book) {
-        // System.out.println("Id     Tittle              Author                  Year            Status");
         for (Book listBook : book
                 ) {
             System.out.print("Id: " + listBook.getId() +
