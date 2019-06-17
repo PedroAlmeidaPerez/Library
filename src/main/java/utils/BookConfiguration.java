@@ -72,17 +72,22 @@ public class BookConfiguration {
             Book.showBooks(bookList);
             int Id = scanner.nextInt();
             int ind = SearchConfiguration.searchBook(Id, bookList);
-            Book book = bookList.get(ind);
-            book.showBook(book);
-            if (book.getStatus()){
-                System.out.println("Sorry but this book is lent by: " + book.getLent());
+            if (ind == -1){
+                System.out.println("No book with this ID");
             }else{
-                book.setStatus(true);
-                book.setLent(person.getName());
-                book.setIdLent(person.getId());
-                person.setIdBook(book.getId());
-                System.out.println(("You have lent the book: ") + book.getTittle());
+                Book book = bookList.get(ind);
+                book.showBook(book);
+                if (book.getStatus()){
+                    System.out.println("Sorry but this book is lent by: " + book.getLent());
+                }else{
+                    book.setStatus(true);
+                    book.setLent(person.getName());
+                    book.setIdLent(person.getId());
+                    person.setIdBook(book.getId());
+                    System.out.println(("You have lent the book: ") + book.getTittle());
+                }
             }
+
         }else{
             System.out.println("This Client does not exist");
         }
