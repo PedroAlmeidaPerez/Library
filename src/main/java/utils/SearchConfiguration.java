@@ -45,16 +45,22 @@ public class SearchConfiguration {
     public void searchByYear(LinkedList<Book> listBook) {
         System.out.println("Introduce the year to search: ");
         Scanner scanner = new Scanner(System.in);
-        year = scanner.nextInt();
-        ListIterator<Book> iter1 = listBook.listIterator();
-        //Book auxYear = iter1.next();
-        while (iter1.hasNext()){
-            Book auxYear = iter1.next();
-            if(auxYear.getYear() == (year)){
-                System.out.println(auxYear.getId() + " " + auxYear.getTittle() + " " + auxYear.getAuthor() + " " + auxYear.getYear() + " " + auxYear.getStatus());
+        try{
+            year = scanner.nextInt();
+            ListIterator<Book> iter1 = listBook.listIterator();
+            //Book auxYear = iter1.next();
+            while (iter1.hasNext()){
+                Book auxYear = iter1.next();
+                if(auxYear.getYear() == (year)){
+                    System.out.println(auxYear.getId() + " " + auxYear.getTittle() + " " + auxYear.getAuthor() + " " + auxYear.getYear() + " " + auxYear.getStatus());
+                }
+                //  auxYear = iter1.next();
             }
-          //  auxYear = iter1.next();
+
+        }catch (Exception e){
+            System.out.println("You are not typing a year");
         }
+
     }
 
     public void searchByAuthorAndTittle(LinkedList<Book> listBook) {
