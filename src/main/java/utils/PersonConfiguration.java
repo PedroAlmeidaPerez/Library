@@ -1,9 +1,6 @@
 package utils;
 
-import model.Book;
-import model.Library;
 import model.Person;
-
 import java.util.ArrayList;
 import java.util.ListIterator;
 import java.util.Scanner;
