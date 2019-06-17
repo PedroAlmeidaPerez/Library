@@ -82,7 +82,6 @@ public class SearchConfiguration {
         while (iter1.hasNext()){
             int auxId = iter1.next().getId();
             if(auxId == Id){
-                System.out.println("si esta");
                 return iter1.nextIndex()-1;
             }
         }
