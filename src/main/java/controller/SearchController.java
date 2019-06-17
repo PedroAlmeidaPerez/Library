@@ -1,7 +1,6 @@
 package controller;
 
 import model.Book;
-import model.Library;
 import utils.SearchConfiguration;
 import view.Menu;
 import view.SearchMenu;
@@ -27,8 +26,6 @@ public class SearchController {
     }
 
     private void searchOption(){
-        //SearchConfiguration searchConfiguration = new SearchConfiguration();
-        //this.option = searchMenu.selectOption();
         switch (option) {
             case 1:
                 searchConfiguration.searchByTittle(listBook);
