@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="64407ed6-8771-4d05-8070-4b55f2d6422c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/DataBook.java" afterPath="$PROJECT_DIR$/src/main/java/data/DataBook.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/PersonConfigurationTest.java" afterPath="$PROJECT_DIR$/src/test/java/utils/PersonConfigurationTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,12 +19,42 @@
       <file leaf-file-name="PersonConfigurationTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/utils/PersonConfigurationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="207">
+              <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#271#279#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-3/junit-4.13-beta-3.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParentRunner.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-3/junit-4.13-beta-3.jar!/org/junit/runners/ParentRunner.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="234" column="0" lean-forward="false" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EachTestNotifier.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-3/junit-4.13-beta-3.jar!/org/junit/internal/runners/model/EachTestNotifier.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -274,7 +303,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Hybris Tests.PersonConfigurationTest.addPersons">
+  <component name="RunManager" selected="Hybris Tests.PersonConfigurationTest.testGetOneElementPerson">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -360,6 +389,56 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="PersonConfigurationTest.testGetOneElementPerson" type="HybrisTests" factoryName="Hybris Tests" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="LibraryATOS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="utils" />
+      <option name="MAIN_CLASS_NAME" value="utils.PersonConfigurationTest" />
+      <option name="METHOD_NAME" value="testGetOneElementPerson" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="PersonConfigurationTest.testSize_AddPersons" type="HybrisTests" factoryName="Hybris Tests" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="LibraryATOS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="utils" />
+      <option name="MAIN_CLASS_NAME" value="utils.PersonConfigurationTest" />
+      <option name="METHOD_NAME" value="testSize_AddPersons" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -420,16 +499,20 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       <item index="1" class="java.lang.String" itemvalue="Hybris Tests.BookTest.testGetTittle" />
       <item index="2" class="java.lang.String" itemvalue="Hybris Tests.PersonConfigurationTest.addPersons" />
+      <item index="3" class="java.lang.String" itemvalue="Hybris Tests.PersonConfigurationTest.testSize_AddPersons" />
+      <item index="4" class="java.lang.String" itemvalue="Hybris Tests.PersonConfigurationTest.testGetOneElementPerson" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Hybris Tests.PersonConfigurationTest.addPersons" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="2" class="java.lang.String" itemvalue="Hybris Tests.BookTest.testGetTittle" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Hybris Tests.PersonConfigurationTest.testGetOneElementPerson" />
+        <item index="1" class="java.lang.String" itemvalue="Hybris Tests.PersonConfigurationTest.testSize_AddPersons" />
+        <item index="2" class="java.lang.String" itemvalue="Hybris Tests.PersonConfigurationTest.addPersons" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="4" class="java.lang.String" itemvalue="Hybris Tests.BookTest.testGetTittle" />
       </list>
     </recent_temporary>
   </component>
@@ -622,39 +705,46 @@
       <option name="project" value="LOCAL" />
       <updated>1560784654504</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Add Unit Test to test size from ArrayList &lt;Person&gt;">
+      <created>1560788936250</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1560788936250</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookTest_testGetTittle - 2019.06.17 at 16h 37m 09s.xml">
-      <configuration name="BookTest.testGetTittle" configurationId="HybrisTests" />
+    <history-entry file="PersonConfigurationTest_testGetOneElementPerson - 2019.06.17 at 18h 41m 43s.xml">
+      <configuration name="PersonConfigurationTest.testGetOneElementPerson" configurationId="HybrisTests" />
     </history-entry>
-    <history-entry file="PersonConfigurationTest_addPersons - 2019.06.17 at 17h 34m 23s.xml">
-      <configuration name="PersonConfigurationTest.addPersons" configurationId="HybrisTests" />
+    <history-entry file="PersonConfigurationTest_testGetOneElementPerson - 2019.06.17 at 18h 42m 07s.xml">
+      <configuration name="PersonConfigurationTest.testGetOneElementPerson" configurationId="HybrisTests" />
     </history-entry>
-    <history-entry file="PersonConfigurationTest_addPersons - 2019.06.17 at 17h 40m 34s.xml">
-      <configuration name="PersonConfigurationTest.addPersons" configurationId="HybrisTests" />
+    <history-entry file="PersonConfigurationTest_testGetOneElementPerson - 2019.06.17 at 18h 42m 11s.xml">
+      <configuration name="PersonConfigurationTest.testGetOneElementPerson" configurationId="HybrisTests" />
     </history-entry>
-    <history-entry file="PersonConfigurationTest_addPersons - 2019.06.17 at 17h 40m 42s.xml">
-      <configuration name="PersonConfigurationTest.addPersons" configurationId="HybrisTests" />
+    <history-entry file="PersonConfigurationTest_testGetOneElementPerson - 2019.06.17 at 18h 42m 56s.xml">
+      <configuration name="PersonConfigurationTest.testGetOneElementPerson" configurationId="HybrisTests" />
     </history-entry>
-    <history-entry file="PersonConfigurationTest_addPersons - 2019.06.17 at 18h 06m 19s.xml">
-      <configuration name="PersonConfigurationTest.addPersons" configurationId="HybrisTests" />
+    <history-entry file="PersonConfigurationTest_testGetOneElementPerson - 2019.06.17 at 18h 43m 31s.xml">
+      <configuration name="PersonConfigurationTest.testGetOneElementPerson" configurationId="HybrisTests" />
     </history-entry>
-    <history-entry file="PersonConfigurationTest_addPersons - 2019.06.17 at 18h 06m 30s.xml">
-      <configuration name="PersonConfigurationTest.addPersons" configurationId="HybrisTests" />
+    <history-entry file="PersonConfigurationTest_testGetOneElementPerson - 2019.06.17 at 18h 44m 23s.xml">
+      <configuration name="PersonConfigurationTest.testGetOneElementPerson" configurationId="HybrisTests" />
     </history-entry>
-    <history-entry file="PersonConfigurationTest_addPersons - 2019.06.17 at 18h 26m 12s.xml">
-      <configuration name="PersonConfigurationTest.addPersons" configurationId="HybrisTests" />
+    <history-entry file="PersonConfigurationTest_testGetOneElementPerson - 2019.06.17 at 18h 45m 04s.xml">
+      <configuration name="PersonConfigurationTest.testGetOneElementPerson" configurationId="HybrisTests" />
     </history-entry>
-    <history-entry file="PersonConfigurationTest_addPersons - 2019.06.17 at 18h 26m 23s.xml">
-      <configuration name="PersonConfigurationTest.addPersons" configurationId="HybrisTests" />
+    <history-entry file="PersonConfigurationTest_testGetOneElementPerson - 2019.06.17 at 18h 45m 54s.xml">
+      <configuration name="PersonConfigurationTest.testGetOneElementPerson" configurationId="HybrisTests" />
     </history-entry>
-    <history-entry file="PersonConfigurationTest_addPersons - 2019.06.17 at 18h 27m 15s.xml">
-      <configuration name="PersonConfigurationTest.addPersons" configurationId="HybrisTests" />
+    <history-entry file="PersonConfigurationTest_testGetOneElementPerson - 2019.06.17 at 18h 46m 23s.xml">
+      <configuration name="PersonConfigurationTest.testGetOneElementPerson" configurationId="HybrisTests" />
     </history-entry>
-    <history-entry file="PersonConfigurationTest_addPersons - 2019.06.17 at 18h 27m 36s.xml">
-      <configuration name="PersonConfigurationTest.addPersons" configurationId="HybrisTests" />
+    <history-entry file="PersonConfigurationTest_testSize_AddPersons - 2019.06.17 at 18h 41m 36s.xml">
+      <configuration name="PersonConfigurationTest.testSize_AddPersons" configurationId="HybrisTests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -679,7 +769,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32671756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34028894" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42696628" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -728,7 +818,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Include search by year" />
     <MESSAGE value="Fixing bugs" />
     <MESSAGE value="Bugs Fixed&#10;Introduction of persons and books" />
     <MESSAGE value="Bugs Fixed&#10;Iterator person!Issue fixed when only one person is introduce" />
@@ -753,7 +842,8 @@
     <MESSAGE value="Clean BookConfiguration from comments and code that is not use" />
     <MESSAGE value="Clean Personfiguration from comments and code that is not use" />
     <MESSAGE value="Clean SearchConfiguration from comments and code that is not use" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean SearchConfiguration from comments and code that is not use" />
+    <MESSAGE value="Add Unit Test to test size from ArrayList &lt;Person&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Unit Test to test size from ArrayList &lt;Person&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -776,51 +866,21 @@
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/utils/PersonConfigurationTest.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="19" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Library.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#401#402#0" expanded="false" />
-            <element signature="e#441#442#0" expanded="false" />
-            <element signature="e#635#636#0" expanded="false" />
-            <element signature="e#677#678#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/SearchMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/SearchConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1281,10 +1341,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-3/junit-4.13-beta-3.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="234" column="0" lean-forward="false" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-3/junit-4.13-beta-3.jar!/org/junit/runner/notification/Failure.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-3/junit-4.13-beta-3.jar!/org/junit/internal/runners/model/EachTestNotifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-3/junit-4.13-beta-3.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/PersonConfigurationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="207">
+          <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#271#279#0" expanded="true" />
