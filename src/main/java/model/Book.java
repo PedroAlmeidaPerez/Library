@@ -1,9 +1,6 @@
 package model;
 
-import java.util.LinkedList;
-
 public class Book {
-    /*se crea IdNext para no tener que poner Id public y poder respetar la encapsulacion*/
     private int Id;
     private static int IdNext = 1;
     private String tittle;
@@ -94,28 +91,7 @@ public class Book {
         } else {
             System.out.println("not lent");
         }
-        //System.out.println(book.getId() + " " + book.getTittle() + " " + book.getAuthor() + " " + book.getYear() + " " + book.getStatus());
-    }
-/*
-    public static void showBooks(LinkedList <Book> book) {
-       // System.out.println("Id     Tittle              Author                  Year            Status");
-        for (Book listBook : book
-                ) {
-            System.out.print("Id: " + listBook.getId() +
-                             " Tittle: " + listBook.getTittle() +
-                             " Author: " + listBook.getAuthor() +
-                             " Year: " + listBook.getYear() +
-                              " Status: ");
-
-            if (listBook.getStatus()) {
-                System.out.println("lent");
-            } else {
-                System.out.println("not lent");
-            }
-
-        }
-
-    }*/
+     }
 
     @Override
     public String toString() {
