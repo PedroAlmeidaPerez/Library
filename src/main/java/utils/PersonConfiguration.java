@@ -18,11 +18,7 @@ public class PersonConfiguration {
             listPerson.add(new Person(name));
 
         }
-        for (Person listPerson : listPerson
-                ) {
-            System.out.println(listPerson.getName());
-        }
-        //return Library.getPerson();
+        showPersons(listPerson);
     }
 
     public Person searchPerson(){
@@ -40,5 +36,12 @@ public class PersonConfiguration {
             }
         }
         return null;
+    }
+
+    public void showPersons (ArrayList<Person> listPersons){
+        for (Person listPerson : listPerson
+                ) {
+            System.out.println(listPerson.getName());
+        }
     }
 }
