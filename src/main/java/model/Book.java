@@ -96,7 +96,7 @@ public class Book {
         }
         //System.out.println(book.getId() + " " + book.getTittle() + " " + book.getAuthor() + " " + book.getYear() + " " + book.getStatus());
     }
-
+/*
     public static void showBooks(LinkedList <Book> book) {
        // System.out.println("Id     Tittle              Author                  Year            Status");
         for (Book listBook : book
@@ -115,7 +115,7 @@ public class Book {
 
         }
 
-    }
+    }*/
 
     @Override
     public String toString() {

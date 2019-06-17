@@ -31,7 +31,7 @@ public class BookConfiguration {
         }else{
             DataBook.dataInsert(bookList);
         }
-        Book.showBooks(bookList);
+        showBooks(bookList);
 
     }
 
@@ -69,7 +69,7 @@ public class BookConfiguration {
             //ListIterator<Book> iter1 = Library.getBook().listIterator();
             Scanner scanner = new Scanner(System.in);
             System.out.println("Which book do you want to rent (by Id)?");
-            Book.showBooks(bookList);
+            showBooks(bookList);
             int Id = scanner.nextInt();
             int ind = SearchConfiguration.searchBook(Id, bookList);
             if (ind == -1){
@@ -96,7 +96,7 @@ public class BookConfiguration {
     public void booksAvailable (){
         int countAvailable=0;
         int countNoAvailable=0;
-        Book.showBooks(bookList);
+        showBooks(bookList);
         List<Book> distinctElements = bookList.stream()
                 .filter( distinctByKey(p -> p.getTittle()) )
                 .collect( Collectors.toList() );
@@ -122,4 +122,24 @@ public class BookConfiguration {
     public static LinkedList<Book> getBookList() {
         return bookList;
     }
+
+    public void showBooks(LinkedList <Book> book) {
+        // System.out.println("Id     Tittle              Author                  Year            Status");
+        for (Book listBook : book
+                ) {
+            System.out.print("Id: " + listBook.getId() +
+                    " Tittle: " + listBook.getTittle() +
+                    " Author: " + listBook.getAuthor() +
+                    " Year: " + listBook.getYear() +
+                    " Status: ");
+
+            if (listBook.getStatus()) {
+                System.out.println("lent");
+            } else {
+                System.out.println("not lent");
+            }
+
+        }
+    }
 }
+
