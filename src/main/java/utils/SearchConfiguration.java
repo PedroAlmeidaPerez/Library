@@ -1,8 +1,6 @@
 package utils;
 
 import model.Book;
-import model.Library;
-
 import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Scanner;
@@ -17,13 +15,11 @@ public class SearchConfiguration {
         Scanner scanner = new Scanner(System.in);
         tittle = scanner.nextLine();
         ListIterator<Book> iter1 = listBook.listIterator();
-        //Book auxBook = iter1.next();
         while (iter1.hasNext()){
             Book auxBook = iter1.next();
             if(auxBook.getTittle().equals(tittle)){
                 System.out.println(auxBook.getId() + " " + auxBook.getTittle() + " " + auxBook.getAuthor() + " " + auxBook.getYear() + " " + auxBook.getStatus());
             }
-            //auxBook = iter1.next();
         }
     }
 
@@ -32,13 +28,11 @@ public class SearchConfiguration {
         Scanner scanner = new Scanner(System.in);
         author = scanner.nextLine();
         ListIterator<Book> iter1 = listBook.listIterator();
-        //Book auxAuthor = iter1.next();
         while (iter1.hasNext()){
             Book auxAuthor = iter1.next();
             if(auxAuthor.getAuthor().equals(author)){
                 System.out.println(auxAuthor.getId() + " " + auxAuthor.getTittle() + " " + auxAuthor.getAuthor() + " " + auxAuthor.getYear() + " " + auxAuthor.getStatus());
             }
-          //  auxAuthor = iter1.next();
         }
     }
 
@@ -48,13 +42,11 @@ public class SearchConfiguration {
         try{
             year = scanner.nextInt();
             ListIterator<Book> iter1 = listBook.listIterator();
-            //Book auxYear = iter1.next();
             while (iter1.hasNext()){
                 Book auxYear = iter1.next();
                 if(auxYear.getYear() == (year)){
                     System.out.println(auxYear.getId() + " " + auxYear.getTittle() + " " + auxYear.getAuthor() + " " + auxYear.getYear() + " " + auxYear.getStatus());
                 }
-                //  auxYear = iter1.next();
             }
 
         }catch (Exception e){
@@ -73,14 +65,12 @@ public class SearchConfiguration {
         System.out.println("Introduce the Author to search: ");
         author = scannAuthor.nextLine();
         ListIterator<Book> iter1 = listBook.listIterator();
-        //Book book = iter1.next();
         while (iter1.hasNext()){
             Book book = iter1.next();
             if((book.getAuthor().equals(author)) && (book.getTittle().equals(tittle))){
                 book.showBook(book);
                 found = true;
             }
-           // book = iter1.next();
         }
         if(!found){
             System.out.println("book not found");
@@ -88,7 +78,6 @@ public class SearchConfiguration {
     }
 
     public static int searchBook(int Id, LinkedList<Book> book){
-      //  Scanner scanner = new Scanner(System.in);
         ListIterator<Book> iter1 = book.listIterator();
         while (iter1.hasNext()){
             int auxId = iter1.next().getId();
