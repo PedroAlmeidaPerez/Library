@@ -42,22 +42,25 @@ public class BookConfiguration {
         int Id = scanner.nextInt();
         ListIterator<Book> iter = bookList.listIterator();
         int ind = SearchConfiguration.searchBook(Id, bookList);
-        Book book = bookList.get(ind);
-        if(!book.getStatus()){
-            System.out.println("si esta");
-            for (int i = 0; i <= ind; i++){
-                iter.next();
-            }
-            iter.remove();
-            scanner.reset();
+        if (ind == -1){
+            System.out.println("No book with this ID");
         }else{
-            if (book.getStatus()){
-                System.out.println(("Can not be deleted because the book is lent by: ") + book.getLent() + " " + book.getIdLent());
+            Book book = bookList.get(ind);
+            if(!book.getStatus()){
+                System.out.println("si esta");
+                for (int i = 0; i <= ind; i++){
+                    iter.next();
+                }
+                iter.remove();
+                scanner.reset();
             }else{
-                System.out.println("no esta");
+                if (book.getStatus()){
+                    System.out.println(("Can not be deleted because the book is lent by: ") + book.getLent() + " " + book.getIdLent());
+                }else{
+                    System.out.println("no esta");
+                }
             }
         }
-
     }
 
     public void  lentBook(Person person){

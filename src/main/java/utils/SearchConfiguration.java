@@ -82,7 +82,7 @@ public class SearchConfiguration {
     }
 
     public static int searchBook(int Id, LinkedList<Book> book){
-        Scanner scanner = new Scanner(System.in);
+      //  Scanner scanner = new Scanner(System.in);
         ListIterator<Book> iter1 = book.listIterator();
         while (iter1.hasNext()){
             int auxId = iter1.next().getId();
