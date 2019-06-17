@@ -14,9 +14,9 @@ public class SearchController {
     private LinkedList<Book> listBook;
     private SearchConfiguration searchConfiguration = new SearchConfiguration();
 
-    public SearchController() {
+    /*public SearchController() {
         this.option = searchMenu.selectOption();
-    }
+    }*/
 
     public SearchController(Menu menu, LinkedList<Book> listBook) {
         this.option = searchMenu.selectOption();
@@ -43,15 +43,16 @@ public class SearchController {
                 searchOption();
                 break;
             case 4:
-               searchConfiguration.searchByAuthorAndTittle(listBook);
+                searchConfiguration.searchByAuthorAndTittle(listBook);
                 this.option = searchMenu.selectOption();
                 searchOption();
                 break;
             case 9:
-                menu.selectOption();
+                new LibraryController();
+                //menu.selectOption();
                 break;
 
-             default:
+            default:
                 System.out.println("This option is not valid");
                 this.option = searchMenu.selectOption();
                 searchOption();

@@ -1,19 +1,19 @@
 package utils;
 
-import model.Book;
 import model.Person;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
-
 public class PersonConfigurationTest {
     private static ArrayList<Person> listPerson = new ArrayList<Person>();
     @Test
     public void testSize_AddPersons() {
-        listPerson.add(new Person("pedro"));
+        /*listPerson.add(new Person("pedro"));*/
+        PersonConfiguration personConfiguration = new PersonConfiguration();
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        personConfiguration.addPersons();
         int result = 1;
         Assert.assertEquals(result,listPerson.size() );
     }

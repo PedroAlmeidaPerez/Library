@@ -16,9 +16,9 @@ public class SearchConfiguration {
         tittle = scanner.nextLine();
         ListIterator<Book> iter1 = listBook.listIterator();
         while (iter1.hasNext()){
-            Book auxBook = iter1.next();
-            if(auxBook.getTittle().equals(tittle)){
-                System.out.println(auxBook.getId() + " " + auxBook.getTittle() + " " + auxBook.getAuthor() + " " + auxBook.getYear() + " " + auxBook.getStatus());
+            Book book = iter1.next();
+            if(book.getTittle().equals(tittle)){
+                book.showBook(book);
             }
         }
     }
@@ -29,9 +29,9 @@ public class SearchConfiguration {
         author = scanner.nextLine();
         ListIterator<Book> iter1 = listBook.listIterator();
         while (iter1.hasNext()){
-            Book auxAuthor = iter1.next();
-            if(auxAuthor.getAuthor().equals(author)){
-                System.out.println(auxAuthor.getId() + " " + auxAuthor.getTittle() + " " + auxAuthor.getAuthor() + " " + auxAuthor.getYear() + " " + auxAuthor.getStatus());
+            Book book = iter1.next();
+            if(book.getAuthor().equals(author)){
+                book.showBook(book);
             }
         }
     }
@@ -43,9 +43,9 @@ public class SearchConfiguration {
             year = scanner.nextInt();
             ListIterator<Book> iter1 = listBook.listIterator();
             while (iter1.hasNext()){
-                Book auxYear = iter1.next();
-                if(auxYear.getYear() == (year)){
-                    System.out.println(auxYear.getId() + " " + auxYear.getTittle() + " " + auxYear.getAuthor() + " " + auxYear.getYear() + " " + auxYear.getStatus());
+                Book book = iter1.next();
+                if(book.getYear() == (year)){
+                    book.showBook(book);
                 }
             }
 
@@ -77,7 +77,7 @@ public class SearchConfiguration {
         }
     }
 
-    public static int searchBook(int Id, LinkedList<Book> book){
+    public int searchBook(int Id, LinkedList<Book> book){
         ListIterator<Book> iter1 = book.listIterator();
         while (iter1.hasNext()){
             int auxId = iter1.next().getId();

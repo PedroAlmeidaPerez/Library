@@ -2,6 +2,7 @@ package utils;
 
 import data.DataBook;
 import model.Book;
+import model.Library;
 import model.Person;
 import java.util.LinkedList;
 import java.util.List;
@@ -12,7 +13,8 @@ import static utils.DistincByKey.distinctByKey;
 
 public class BookConfiguration {
 
-    private static LinkedList<Book> bookList = new LinkedList<Book>();
+    private static LinkedList<Book> bookList = new LinkedList<>();
+    private SearchConfiguration searchConfiguration = new SearchConfiguration();
 
     public void addBook (){
         String option;
@@ -38,13 +40,12 @@ public class BookConfiguration {
         System.out.println("Introduce the ID from the book that you want to delete: ");
         int Id = scanner.nextInt();
         ListIterator<Book> iter = bookList.listIterator();
-        int ind = SearchConfiguration.searchBook(Id, bookList);
+        int ind = searchConfiguration.searchBook(Id, bookList);
         if (ind == -1){
             System.out.println("No book with this ID");
         }else{
             Book book = bookList.get(ind);
             if(!book.getStatus()){
-                System.out.println("si esta");
                 for (int i = 0; i <= ind; i++){
                     iter.next();
                 }
@@ -53,8 +54,6 @@ public class BookConfiguration {
             }else{
                 if (book.getStatus()){
                     System.out.println(("Can not be deleted because the book is lent by: ") + book.getLent() + " " + book.getIdLent());
-                }else{
-                    System.out.println("no esta");
                 }
             }
         }
@@ -66,7 +65,7 @@ public class BookConfiguration {
             System.out.println("Which book do you want to rent (by Id)?");
             showBooks(bookList);
             int Id = scanner.nextInt();
-            int ind = SearchConfiguration.searchBook(Id, bookList);
+            int ind = searchConfiguration.searchBook(Id, bookList);
             if (ind == -1){
                 System.out.println("No book with this ID");
             }else{
@@ -131,5 +130,7 @@ public class BookConfiguration {
             }
         }
     }
+
+
 }
 

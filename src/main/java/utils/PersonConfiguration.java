@@ -6,16 +6,17 @@ import java.util.ListIterator;
 import java.util.Scanner;
 
 public class PersonConfiguration {
-    private static ArrayList<Person> listPerson = new ArrayList<Person>();
+    private static ArrayList<Person> listPerson = new ArrayList<>();
     public void  addPersons (){
         Scanner scanner = new Scanner(System.in);
         System.out.println("For finishing adding persons you must write exit or 0");
         while ((!(scanner.hasNext("exit"))) && (!(scanner.hasNext("0")))) {
+            System.out.println("Exit or 0 if you don't want to insert more persons");
             String name = scanner.nextLine();
             listPerson.add(new Person(name));
 
         }
-        showPersons(listPerson);
+        showPersons();
     }
 
     public Person searchPerson(){
@@ -35,10 +36,10 @@ public class PersonConfiguration {
         return null;
     }
 
-    public void showPersons (ArrayList<Person> listPersons){
-        for (Person listPerson : listPerson
+    public void showPersons (){
+        for (Person listPersons : listPerson
                 ) {
-            System.out.println(listPerson.getName());
+            System.out.println(listPersons.getName());
         }
     }
 }
