@@ -138,7 +138,6 @@ public class BookConfiguration {
             } else {
                 System.out.println("not lent");
             }
-
         }
     }
 }

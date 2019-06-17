@@ -1,31 +1,16 @@
 package controller;
 
-import model.Book;
 import model.Library;
 import model.Person;
 import utils.BookConfiguration;
-import utils.PersonConfiguration;
-import utils.SearchConfiguration;
 import view.Menu;
-import view.SearchMenu;
-
-import java.util.Scanner;
 
 public class LibraryController {
     private Menu menu = new Menu();
     private int option;
-    //private BookConfiguration bookConfiguration;
-    // private SearchMenu searchMenu = new SearchMenu();
-   // private PersonConfiguration personConfiguration;
-
-    //private Library library;
-    //private PersonConfiguration personConfiguration;
     private Library library;
-    //private PersonConfiguration personConfiguration = new PersonConfiguration();
 
     public LibraryController() {
-        //this.library = library;
-        //  this.personConfiguration = personConfiguration;
         library = new Library();
         this.option = menu.selectOption();
         mainMenu();
@@ -35,52 +20,35 @@ public class LibraryController {
 
         switch (option) {
             case 1:
-                System.out.println("estas en la opcion 1");
                 library.getPersonConfiguration().addPersons();
-                //personConfiguration.addPersons();
                 this.option = menu.selectOption();
                 mainMenu();
                 break;
             case 2:
-
-                System.out.println("estas en la opcion 2");
                 library.getBookConfiguration().addBook();
-                //bookConfiguration.addBook();
-                //BookConfiguration.addBook();
                 this.option = menu.selectOption();
                 mainMenu();
                 break;
             case 3:
-                System.out.println("Estas en la opcion 3");
                 library.getBookConfiguration().deleteBook();
-                //bookConfiguration.deleteBook();
-                //BookConfiguration.deleteBook();
                 this.option = menu.selectOption();
                 mainMenu();
                 break;
             case 4:
                 Person person;
-                System.out.println("Estas en la opcion 4");
-               /* person = personConfiguration.searchPerson();
-                bookConfiguration.lentBook(person);*/
-               person = library.getPersonConfiguration().searchPerson();
-               library.getBookConfiguration().lentBook(person);
-                //BookConfiguration.lentBook(person);
+                person = library.getPersonConfiguration().searchPerson();
+                library.getBookConfiguration().lentBook(person);
                 this.option = menu.selectOption();
                 mainMenu();
                 break;
-
             case 5:
                 library.getBookConfiguration().booksAvailable();
-                //bookConfiguration.booksAvailable();
-                //BookConfiguration.booksAvailable();
                 this.option = menu.selectOption();
                 mainMenu();
                 break;
             case 6:
                 SearchController searchController = new SearchController(menu, BookConfiguration.getBookList());
                 break;
-            //searchMenu();
             case 0:
                 break;
             default:
@@ -89,23 +57,5 @@ public class LibraryController {
                 mainMenu();
                 break;
         }
-    }
-
-
-
-    public Menu getMenu() {
-        return menu;
-    }
-
-    public void setMenu(Menu menu) {
-        this.menu = menu;
-    }
-
-    public int getOption() {
-        return option;
-    }
-
-    public void setOption(int option) {
-        this.option = option;
     }
 }
