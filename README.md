@@ -20,7 +20,7 @@ For testing you need to run the program in a IDE and also have some Unit tests f
 * SearchConfigurationTest.java
 * BookTest.java
 
-Visit my other repositories:  
+Feel free to visit my other repositories:  
 
 https://github.com/PedroAlmeidaPerez/OnlineShop
 
