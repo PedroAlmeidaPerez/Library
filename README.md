@@ -19,6 +19,7 @@ For testing you need to run the program in a IDE and also have some Unit tests f
 * PersonConfigurationTest.java  
 * SearchConfigurationTest.java
 * BookTest.java
+* ValidatePersonTest.java
 
 Feel free to visit my other repositories:  
 
