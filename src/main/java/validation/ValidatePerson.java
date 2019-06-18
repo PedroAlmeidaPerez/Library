@@ -6,7 +6,7 @@ public class ValidatePerson {
         boolean validation = false;
         for (int i = 0; i < name.length (); i++) {
             char c = name.charAt (i);
-            if(Character.isDigit(c)){
+            if(!Character.isLetter(c)){
                 return false;
             }
         }

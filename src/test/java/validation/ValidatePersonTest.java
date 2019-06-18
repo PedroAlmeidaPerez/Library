@@ -18,4 +18,10 @@ public class ValidatePersonTest {
         boolean result = validatePerson.ValidateName("pedro2");
         Assert.assertEquals(true, result);
     }
+    @Test
+    public void testValidateNameWithEspecialCharacters() {
+        ValidatePerson validatePerson = new ValidatePerson();
+        boolean result = validatePerson.ValidateName("pedro@");
+        Assert.assertEquals(true, result);
+    }
 }
