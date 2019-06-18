@@ -1,5 +1,7 @@
 Library Application
-Simulates the following points:
+
+Respecting the following requirements:
+
 1. Library contains books to lend (at the beginning there are no books in the library)
 2. Book consist of title, year and author.
 4. Each book should have unique identifier (ID) across application.
