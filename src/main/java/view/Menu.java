@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Menu {
     private int option;
 
-    public int selectOption (){
-        Scanner scanner = new Scanner(System.in);
-        //while (option != 0){
+    public int selectOption () {
+        try {
+            Scanner scanner = new Scanner(System.in);
+            //while (option != 0){
             System.out.println("*-----------Welcome to ATOS Main Menu library-----------*");
             System.out.println("  Press 1 to add a Client: ");
             System.out.println("  Press 2 to add a Book: ");
@@ -19,8 +20,14 @@ public class Menu {
             System.out.println("*--------------------------------------------------------*");
 
             option = scanner.nextInt();
-        //}
+            //}
 
-        return option;
+            return option;
+
+
+        } catch (Exception e) {
+            return 99;
+        }
+
     }
 }
