@@ -14,7 +14,7 @@ Respecting the following requirements:
 
 Installation and Testing
 Download the project from: https://github.com/PedroAlmeidaPerez/Library
-For testing you need to run the program in a IDE and also have some Unit tests for Class:
+For testing you need to run the program in a IDE and also you have Unit tests for Class:
 * BookConfigurationTest.java
 * PersonConfigurationTest.java  
 * SearchConfigurationTest.java
