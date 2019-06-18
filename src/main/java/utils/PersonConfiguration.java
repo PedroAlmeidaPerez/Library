@@ -1,6 +1,8 @@
 package utils;
 
 import model.Person;
+import validation.ValidatePerson;
+
 import java.util.ArrayList;
 import java.util.ListIterator;
 import java.util.Scanner;
@@ -8,12 +10,20 @@ import java.util.Scanner;
 public class PersonConfiguration {
     private static ArrayList<Person> listPerson = new ArrayList<>();
     public void  addPersons (){
+        ValidatePerson validatePerson = new ValidatePerson();
         Scanner scanner = new Scanner(System.in);
         System.out.println("For finishing adding persons you must write exit or 0");
         while ((!(scanner.hasNext("exit"))) && (!(scanner.hasNext("0")))) {
-            System.out.println("Exit or 0 if you don't want to insert more persons");
+
             String name = scanner.nextLine();
-            listPerson.add(new Person(name));
+            boolean validation = validatePerson.ValidateName(name);
+            if(validation){
+                listPerson.add(new Person(name));
+            }else{
+                System.out.println(name + " Is not a person name, please introduce one correctly");
+                System.out.println("Exit or 0 if you don't want to insert more persons");
+            }
+
 
         }
         showPersons();
